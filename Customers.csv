@@ -1,0 +1,241 @@
+﻿CustomerID,CustomerName,Segment,Region,City,Country
+C0001,Jordan Meyer,Small Business,North,Hamburg,Germany
+C0002,Riley Fischer,Consumer,Central,Frankfurt,Germany
+C0003,Robin Richter,Consumer,East,Berlin,Germany
+C0004,Mia Schmidt,Small Business,West,Dusseldorf,Germany
+C0005,Milan Meyer,Consumer,West,Dusseldorf,Germany
+C0006,Taylor Fischer,Consumer,International,Vienna,Austria
+C0007,Noah Koch,Consumer,North,Hamburg,Germany
+C0008,Mia Fischer,Small Business,Central,Frankfurt,Germany
+C0009,Mia Becker,Consumer,South,Munich,Germany
+C0010,Sofia Koch,Corporate,North,Hamburg,Germany
+C0011,Alex Klein,Consumer,East,Berlin,Germany
+C0012,Milan Wagner,Corporate,International,Vienna,Austria
+C0013,Robin Fischer,Corporate,Central,Frankfurt,Germany
+C0014,Jordan Schmidt,Corporate,Central,Frankfurt,Germany
+C0015,Jordan Wagner,Corporate,Central,Frankfurt,Germany
+C0016,Riley Klein,Consumer,Central,Frankfurt,Germany
+C0017,Sofia Schulz,Consumer,East,Berlin,Germany
+C0018,Chris Schmidt,Small Business,North,Hamburg,Germany
+C0019,Drew Wolf,Small Business,International,Vienna,Austria
+C0020,Avery Koch,Consumer,West,Dusseldorf,Germany
+C0021,Taylor Meyer,Small Business,East,Berlin,Germany
+C0022,Casey Klein,Corporate,West,Dusseldorf,Germany
+C0023,Taylor Wolf,Consumer,South,Munich,Germany
+C0024,Jordan Becker,Corporate,International,Vienna,Austria
+C0025,Sofia Bauer,Corporate,Central,Frankfurt,Germany
+C0026,Jamie Wagner,Corporate,East,Berlin,Germany
+C0027,Morgan Bauer,Corporate,West,Dusseldorf,Germany
+C0028,Taylor Koch,Small Business,Central,Frankfurt,Germany
+C0029,Jamie Schulz,Small Business,East,Berlin,Germany
+C0030,Casey Schneider,Corporate,West,Dusseldorf,Germany
+C0031,Chris Weber,Small Business,West,Dusseldorf,Germany
+C0032,Mia Fischer,Small Business,South,Munich,Germany
+C0033,Kim Wolf,Consumer,North,Hamburg,Germany
+C0034,Casey Wolf,Consumer,East,Berlin,Germany
+C0035,Kim Becker,Corporate,International,Vienna,Austria
+C0036,Taylor Fischer,Small Business,North,Hamburg,Germany
+C0037,Kim Fischer,Small Business,International,Vienna,Austria
+C0038,Lena Becker,Small Business,Central,Frankfurt,Germany
+C0039,Sofia Schneider,Corporate,South,Munich,Germany
+C0040,Robin Fischer,Small Business,East,Berlin,Germany
+C0041,Mia Schulz,Corporate,North,Hamburg,Germany
+C0042,Milan Neumann,Small Business,Central,Frankfurt,Germany
+C0043,Chris Wagner,Consumer,Central,Frankfurt,Germany
+C0044,Robin Schulz,Corporate,West,Dusseldorf,Germany
+C0045,Taylor Klein,Consumer,North,Hamburg,Germany
+C0046,Jordan Schneider,Small Business,International,Vienna,Austria
+C0047,Jamie Klein,Small Business,West,Dusseldorf,Germany
+C0048,Milan Koch,Consumer,International,Vienna,Austria
+C0049,Chris Becker,Small Business,Central,Frankfurt,Germany
+C0050,Sofia Schulz,Corporate,Central,Frankfurt,Germany
+C0051,Mia Wolf,Consumer,Central,Frankfurt,Germany
+C0052,Jordan Bauer,Small Business,South,Munich,Germany
+C0053,Riley Klein,Small Business,West,Dusseldorf,Germany
+C0054,Kim Schmidt,Corporate,West,Dusseldorf,Germany
+C0055,Milan Schneider,Corporate,West,Dusseldorf,Germany
+C0056,Alex Richter,Small Business,North,Hamburg,Germany
+C0057,Riley Schulz,Consumer,East,Berlin,Germany
+C0058,Noah Neumann,Consumer,North,Hamburg,Germany
+C0059,Drew Wolf,Small Business,Central,Frankfurt,Germany
+C0060,Noah Koch,Consumer,Central,Frankfurt,Germany
+C0061,Robin Wagner,Consumer,International,Vienna,Austria
+C0062,Mia Klein,Small Business,Central,Frankfurt,Germany
+C0063,Alex Koch,Corporate,West,Dusseldorf,Germany
+C0064,Lena Meyer,Consumer,International,Vienna,Austria
+C0065,Avery Neumann,Corporate,West,Dusseldorf,Germany
+C0066,Casey Meyer,Consumer,South,Munich,Germany
+C0067,Taylor Schmidt,Small Business,International,Vienna,Austria
+C0068,Lena Wolf,Consumer,West,Dusseldorf,Germany
+C0069,Mia Klein,Consumer,North,Hamburg,Germany
+C0070,Robin Bauer,Corporate,West,Dusseldorf,Germany
+C0071,Mia Schneider,Corporate,Central,Frankfurt,Germany
+C0072,Noah Wolf,Small Business,South,Munich,Germany
+C0073,Milan Fischer,Small Business,West,Dusseldorf,Germany
+C0074,Morgan Richter,Corporate,North,Hamburg,Germany
+C0075,Chris Bauer,Small Business,Central,Frankfurt,Germany
+C0076,Avery Hoffmann,Small Business,West,Dusseldorf,Germany
+C0077,Sofia Schmidt,Consumer,South,Munich,Germany
+C0078,Casey Schmidt,Corporate,South,Munich,Germany
+C0079,Alex Koch,Small Business,East,Berlin,Germany
+C0080,Casey Koch,Consumer,Central,Frankfurt,Germany
+C0081,Alex Schmidt,Small Business,International,Vienna,Austria
+C0082,Sam Fischer,Consumer,West,Dusseldorf,Germany
+C0083,Sam Wolf,Corporate,North,Hamburg,Germany
+C0084,Taylor Schulz,Consumer,Central,Frankfurt,Germany
+C0085,Riley Bauer,Corporate,East,Berlin,Germany
+C0086,Morgan Schulz,Consumer,Central,Frankfurt,Germany
+C0087,Lena Fischer,Corporate,North,Hamburg,Germany
+C0088,Milan Fischer,Consumer,South,Munich,Germany
+C0089,Jordan Bauer,Corporate,Central,Frankfurt,Germany
+C0090,Avery Becker,Corporate,Central,Frankfurt,Germany
+C0091,Sofia Wolf,Small Business,West,Dusseldorf,Germany
+C0092,Sam Bauer,Small Business,Central,Frankfurt,Germany
+C0093,Jordan Meyer,Corporate,International,Vienna,Austria
+C0094,Kim Klein,Consumer,West,Dusseldorf,Germany
+C0095,Casey Fischer,Consumer,International,Vienna,Austria
+C0096,Mia Hoffmann,Consumer,South,Munich,Germany
+C0097,Milan Schneider,Corporate,South,Munich,Germany
+C0098,Sofia Fischer,Consumer,Central,Frankfurt,Germany
+C0099,Sofia Klein,Small Business,East,Berlin,Germany
+C0100,Jordan Meyer,Small Business,North,Hamburg,Germany
+C0101,Mia Wolf,Consumer,Central,Frankfurt,Germany
+C0102,Taylor Neumann,Consumer,South,Munich,Germany
+C0103,Jamie Becker,Corporate,Central,Frankfurt,Germany
+C0104,Lena Fischer,Corporate,North,Hamburg,Germany
+C0105,Sam Schneider,Corporate,Central,Frankfurt,Germany
+C0106,Alex Becker,Corporate,Central,Frankfurt,Germany
+C0107,Sofia Weber,Corporate,Central,Frankfurt,Germany
+C0108,Mia Bauer,Small Business,East,Berlin,Germany
+C0109,Lena Schneider,Consumer,West,Dusseldorf,Germany
+C0110,Drew Fischer,Consumer,Central,Frankfurt,Germany
+C0111,Mia Meyer,Small Business,South,Munich,Germany
+C0112,Kim Meyer,Consumer,Central,Frankfurt,Germany
+C0113,Lena Schulz,Small Business,East,Berlin,Germany
+C0114,Jamie Meyer,Small Business,West,Dusseldorf,Germany
+C0115,Taylor Wolf,Consumer,East,Berlin,Germany
+C0116,Taylor Koch,Consumer,East,Berlin,Germany
+C0117,Casey Becker,Consumer,North,Hamburg,Germany
+C0118,Casey Koch,Small Business,North,Hamburg,Germany
+C0119,Sam Koch,Consumer,South,Munich,Germany
+C0120,Milan Bauer,Small Business,North,Hamburg,Germany
+C0121,Noah Wagner,Corporate,West,Dusseldorf,Germany
+C0122,Morgan Bauer,Small Business,Central,Frankfurt,Germany
+C0123,Kim Fischer,Corporate,East,Berlin,Germany
+C0124,Chris Schneider,Small Business,West,Dusseldorf,Germany
+C0125,Drew Hoffmann,Corporate,International,Vienna,Austria
+C0126,Taylor Meyer,Corporate,East,Berlin,Germany
+C0127,Jordan Schmidt,Small Business,North,Hamburg,Germany
+C0128,Morgan Schulz,Corporate,Central,Frankfurt,Germany
+C0129,Robin Neumann,Corporate,East,Berlin,Germany
+C0130,Taylor Neumann,Consumer,East,Berlin,Germany
+C0131,Avery Weber,Consumer,East,Berlin,Germany
+C0132,Sofia Wolf,Small Business,East,Berlin,Germany
+C0133,Drew Koch,Small Business,North,Hamburg,Germany
+C0134,Noah Meyer,Small Business,East,Berlin,Germany
+C0135,Mia Weber,Small Business,Central,Frankfurt,Germany
+C0136,Jordan Neumann,Consumer,South,Munich,Germany
+C0137,Riley Schmidt,Consumer,East,Berlin,Germany
+C0138,Mia Schneider,Corporate,North,Hamburg,Germany
+C0139,Drew Koch,Consumer,West,Dusseldorf,Germany
+C0140,Kim Fischer,Small Business,West,Dusseldorf,Germany
+C0141,Riley Schulz,Corporate,International,Vienna,Austria
+C0142,Riley Neumann,Consumer,South,Munich,Germany
+C0143,Taylor Bauer,Corporate,South,Munich,Germany
+C0144,Riley Meyer,Consumer,West,Dusseldorf,Germany
+C0145,Kim Klein,Consumer,International,Vienna,Austria
+C0146,Riley Schneider,Small Business,International,Vienna,Austria
+C0147,Sofia Schulz,Small Business,North,Hamburg,Germany
+C0148,Milan Schulz,Consumer,South,Munich,Germany
+C0149,Jordan Schmidt,Small Business,Central,Frankfurt,Germany
+C0150,Robin Schulz,Consumer,North,Hamburg,Germany
+C0151,Avery Koch,Small Business,International,Vienna,Austria
+C0152,Robin Becker,Consumer,South,Munich,Germany
+C0153,Sam Weber,Corporate,International,Vienna,Austria
+C0154,Sam Neumann,Corporate,South,Munich,Germany
+C0155,Morgan Bauer,Consumer,West,Dusseldorf,Germany
+C0156,Jordan Wagner,Small Business,East,Berlin,Germany
+C0157,Milan Koch,Small Business,North,Hamburg,Germany
+C0158,Robin Neumann,Consumer,East,Berlin,Germany
+C0159,Jamie Klein,Consumer,East,Berlin,Germany
+C0160,Milan Meyer,Consumer,Central,Frankfurt,Germany
+C0161,Kim Klein,Corporate,International,Vienna,Austria
+C0162,Casey Weber,Consumer,East,Berlin,Germany
+C0163,Jordan Becker,Consumer,West,Dusseldorf,Germany
+C0164,Lena Fischer,Consumer,West,Dusseldorf,Germany
+C0165,Sofia Wagner,Corporate,West,Dusseldorf,Germany
+C0166,Casey Fischer,Consumer,Central,Frankfurt,Germany
+C0167,Morgan Becker,Corporate,South,Munich,Germany
+C0168,Riley Wolf,Consumer,South,Munich,Germany
+C0169,Riley Wagner,Small Business,West,Dusseldorf,Germany
+C0170,Noah Becker,Small Business,North,Hamburg,Germany
+C0171,Mia Wagner,Consumer,North,Hamburg,Germany
+C0172,Jordan Neumann,Corporate,North,Hamburg,Germany
+C0173,Jamie Koch,Corporate,Central,Frankfurt,Germany
+C0174,Sam Schmidt,Small Business,Central,Frankfurt,Germany
+C0175,Milan Wagner,Small Business,Central,Frankfurt,Germany
+C0176,Kim Becker,Small Business,West,Dusseldorf,Germany
+C0177,Noah Schmidt,Corporate,Central,Frankfurt,Germany
+C0178,Morgan Weber,Consumer,North,Hamburg,Germany
+C0179,Milan Meyer,Small Business,International,Vienna,Austria
+C0180,Mia Bauer,Small Business,East,Berlin,Germany
+C0181,Morgan Wagner,Corporate,International,Vienna,Austria
+C0182,Taylor Bauer,Corporate,North,Hamburg,Germany
+C0183,Kim Bauer,Consumer,West,Dusseldorf,Germany
+C0184,Drew Schulz,Corporate,Central,Frankfurt,Germany
+C0185,Milan Wagner,Corporate,West,Dusseldorf,Germany
+C0186,Drew Schulz,Consumer,West,Dusseldorf,Germany
+C0187,Morgan Becker,Small Business,North,Hamburg,Germany
+C0188,Chris Bauer,Small Business,West,Dusseldorf,Germany
+C0189,Jamie Koch,Small Business,South,Munich,Germany
+C0190,Drew Becker,Small Business,South,Munich,Germany
+C0191,Alex Weber,Corporate,Central,Frankfurt,Germany
+C0192,Morgan Becker,Small Business,East,Berlin,Germany
+C0193,Kim Hoffmann,Corporate,East,Berlin,Germany
+C0194,Sofia Bauer,Consumer,West,Dusseldorf,Germany
+C0195,Noah Hoffmann,Small Business,International,Vienna,Austria
+C0196,Jamie Bauer,Consumer,North,Hamburg,Germany
+C0197,Drew Schulz,Small Business,West,Dusseldorf,Germany
+C0198,Kim Schmidt,Consumer,North,Hamburg,Germany
+C0199,Drew Fischer,Consumer,West,Dusseldorf,Germany
+C0200,Robin Meyer,Consumer,International,Vienna,Austria
+C0201,Casey Hoffmann,Small Business,West,Dusseldorf,Germany
+C0202,Taylor Hoffmann,Corporate,International,Vienna,Austria
+C0203,Morgan Richter,Small Business,West,Dusseldorf,Germany
+C0204,Chris Hoffmann,Corporate,Central,Frankfurt,Germany
+C0205,Casey Schneider,Small Business,West,Dusseldorf,Germany
+C0206,Alex Neumann,Consumer,South,Munich,Germany
+C0207,Milan Fischer,Consumer,Central,Frankfurt,Germany
+C0208,Noah Hoffmann,Consumer,International,Vienna,Austria
+C0209,Mia Fischer,Consumer,South,Munich,Germany
+C0210,Sofia Schneider,Corporate,Central,Frankfurt,Germany
+C0211,Noah Schulz,Small Business,South,Munich,Germany
+C0212,Kim Klein,Corporate,Central,Frankfurt,Germany
+C0213,Noah Becker,Small Business,Central,Frankfurt,Germany
+C0214,Sofia Neumann,Consumer,West,Dusseldorf,Germany
+C0215,Lena Hoffmann,Corporate,Central,Frankfurt,Germany
+C0216,Casey Wolf,Small Business,South,Munich,Germany
+C0217,Riley Klein,Small Business,North,Hamburg,Germany
+C0218,Lena Bauer,Consumer,North,Hamburg,Germany
+C0219,Riley Hoffmann,Consumer,West,Dusseldorf,Germany
+C0220,Drew Fischer,Corporate,International,Vienna,Austria
+C0221,Kim Wagner,Small Business,North,Hamburg,Germany
+C0222,Taylor Schneider,Consumer,West,Dusseldorf,Germany
+C0223,Casey Becker,Small Business,Central,Frankfurt,Germany
+C0224,Robin Richter,Consumer,South,Munich,Germany
+C0225,Taylor Becker,Corporate,Central,Frankfurt,Germany
+C0226,Kim Schulz,Corporate,South,Munich,Germany
+C0227,Milan Meyer,Consumer,Central,Frankfurt,Germany
+C0228,Milan Becker,Small Business,East,Berlin,Germany
+C0229,Alex Wolf,Small Business,East,Berlin,Germany
+C0230,Chris Hoffmann,Consumer,South,Munich,Germany
+C0231,Avery Weber,Corporate,West,Dusseldorf,Germany
+C0232,Milan Schulz,Small Business,International,Vienna,Austria
+C0233,Mia Klein,Small Business,North,Hamburg,Germany
+C0234,Casey Hoffmann,Consumer,Central,Frankfurt,Germany
+C0235,Riley Becker,Corporate,West,Dusseldorf,Germany
+C0236,Alex Becker,Corporate,Central,Frankfurt,Germany
+C0237,Chris Richter,Consumer,East,Berlin,Germany
+C0238,Sofia Neumann,Consumer,West,Dusseldorf,Germany
+C0239,Mia Meyer,Corporate,South,Munich,Germany
+C0240,Alex Schmidt,Small Business,East,Berlin,Germany

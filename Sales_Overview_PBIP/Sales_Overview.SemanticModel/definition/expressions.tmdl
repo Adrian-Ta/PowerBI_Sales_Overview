@@ -1,0 +1,6 @@
+/// Ordner, in dem Sales.csv, Products.csv und Customers.csv liegen
+expression DataFolder = "C:\PowerBI\SalesOverview" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: d5f8682b-0a05-547a-8b80-b8475b1952bf
+
+	annotation PBI_ResultType = Text
+

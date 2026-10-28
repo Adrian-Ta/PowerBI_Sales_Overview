@@ -1,0 +1,41 @@
+-- Tabelle: Sales
+-- Erstelle jedes Measure einzeln über Modellierung > Neue Maßnahme.
+
+Total Sales = SUM(Sales[Sales])
+
+Total Profit = SUM(Sales[Profit])
+
+Total Cost = SUM(Sales[Cost])
+
+Total Orders = DISTINCTCOUNT(Sales[OrderID])
+
+Total Quantity = SUM(Sales[Quantity])
+
+Total Customers = DISTINCTCOUNT(Sales[CustomerID])
+
+Average Order Value = DIVIDE([Total Sales], [Total Orders], 0)
+
+Profit Margin % = DIVIDE([Total Profit], [Total Sales], 0)
+
+Sales Previous Month =
+CALCULATE(
+    [Total Sales],
+    DATEADD('Calendar'[Date], -1, MONTH)
+)
+
+Sales MoM Change % =
+DIVIDE([Total Sales] - [Sales Previous Month], [Sales Previous Month], 0)
+
+-- Kalender-Tabelle über Modellierung > Neue Tabelle erstellen:
+Calendar =
+ADDCOLUMNS(
+    CALENDAR(MIN(Sales[OrderDate]), MAX(Sales[OrderDate])),
+    "Year", YEAR([Date]),
+    "Month Number", MONTH([Date]),
+    "Month", FORMAT([Date], "MMM"),
+    "Year Month", FORMAT([Date], "YYYY-MM")
+)
+
+-- Danach Beziehung erstellen: Calendar[Date] (1) -> Sales[OrderDate] (*).
+-- Calendar[Date] als Datumstabelle markieren (Tabellentools > Als Datumstabelle markieren).
+-- Sortiere Calendar[Month] nach Calendar[Month Number].

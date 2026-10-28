@@ -1,0 +1,19 @@
+﻿ProductID,ProductName,Category,SubCategory,UnitCost,ListPrice
+P001,Laptop Pro 14,Technology,Computers,1250,1650
+P002,Business Laptop 15,Technology,Computers,850,1199
+P003,Smartphone X,Technology,Phones,620,899
+P004,Wireless Headphones,Technology,Accessories,55,109
+P005,4K Monitor 27,Technology,Accessories,210,329
+P006,Office Chair Ergo,Furniture,Chairs,145,249
+P007,Executive Chair,Furniture,Chairs,260,429
+P008,Standing Desk,Furniture,Desks,280,499
+P009,Desk Lamp,Furniture,Accessories,22,49
+P010,Filing Cabinet,Furniture,Storage,95,169
+P011,A4 Paper Box,Office Supplies,Paper,18,32
+P012,Laser Printer,Office Supplies,Printers,130,229
+P013,Ink Cartridge Set,Office Supplies,Printing,32,64
+P014,Binder Pack,Office Supplies,Organization,8,17
+P015,Whiteboard,Office Supplies,Organization,45,89
+P016,USB-C Dock,Technology,Accessories,75,149
+P017,Tablet 11,Technology,Computers,310,499
+P018,Bookshelf,Furniture,Storage,70,139

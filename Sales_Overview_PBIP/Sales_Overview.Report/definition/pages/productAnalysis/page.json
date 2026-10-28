@@ -1,0 +1,110 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "productAnalysis",
+  "displayName": "Product Analysis",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "salesProfitBySubCategory",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySubCategory",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySubCategory",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySubCategory",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "marginByCategory",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "marginByCategory",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "marginByCategory",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "marginByCategory",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesVsMarginByProduct",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesVsMarginByProduct",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesVsMarginByProduct",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesVsMarginByProduct",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "productPerformance",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "productPerformance",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "productPerformance",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "productPerformance",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByMonthCategory",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByMonthCategory",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByMonthCategory",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByMonthCategory",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    }
+  ]
+}

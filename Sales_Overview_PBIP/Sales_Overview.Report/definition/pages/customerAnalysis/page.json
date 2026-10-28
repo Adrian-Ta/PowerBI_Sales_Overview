@@ -1,0 +1,110 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "customerAnalysis",
+  "displayName": "Customer Analysis",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "salesProfitBySegment",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySegment",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySegment",
+      "target": "slicerSegment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitBySegment",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegmentChannel",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegmentChannel",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegmentChannel",
+      "target": "slicerSegment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegmentChannel",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "activeCustomersByMonth",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "activeCustomersByMonth",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "activeCustomersByMonth",
+      "target": "slicerSegment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "activeCustomersByMonth",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top10Customers",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top10Customers",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top10Customers",
+      "target": "slicerSegment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top10Customers",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customersBySegment",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customersBySegment",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customersBySegment",
+      "target": "slicerSegment",
+      "type": "NoFilter"
+    },
+    {
+      "source": "customersBySegment",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+table Sales
+	lineageTag: 4773091e-af8c-564a-b2a1-0c2f10b664e2
+
+	/// Umsatz (Summe Sales[Sales])
+	measure 'Total Sales' = SUM(Sales[Sales])
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Sales
+		lineageTag: 61c4c64b-f5cc-5405-8a47-68a5f6fbe749
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	/// Gewinn (Summe Sales[Profit])
+	measure 'Total Profit' = SUM(Sales[Profit])
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Sales
+		lineageTag: e38c6794-01f2-560e-9212-ad5194c7e28a
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	/// Kosten (Summe Sales[Cost])
+	measure 'Total Cost' = SUM(Sales[Cost])
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Sales
+		lineageTag: bcb1add8-cf54-516f-9644-9d711cda8932
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	/// Anzahl eindeutiger Bestellungen
+	measure 'Total Orders' = DISTINCTCOUNT(Sales[OrderID])
+		formatString: #,0
+		displayFolder: Counts
+		lineageTag: 3838229f-dc55-57bd-93df-4826b73799ef
+
+	/// Verkaufte Menge
+	measure 'Total Quantity' = SUM(Sales[Quantity])
+		formatString: #,0
+		displayFolder: Counts
+		lineageTag: 76c89101-b3e4-5aca-a35e-3bda5053f625
+
+	/// Anzahl Kunden mit Umsatz
+	measure 'Total Customers' = DISTINCTCOUNT(Sales[CustomerID])
+		formatString: #,0
+		displayFolder: Counts
+		lineageTag: a50ebe1e-87ad-5896-b0fa-0b2d650b0607
+
+	/// Umsatz je Bestellung
+	measure 'Average Order Value' = DIVIDE([Total Sales], [Total Orders], 0)
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Ratios
+		lineageTag: aceaf565-d9a7-5c3b-b2b9-8c34fbd63aa5
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	/// Gewinnmarge = Gewinn / Umsatz (nicht Durchschnitt der Zeilenmargen)
+	measure 'Profit Margin %' = DIVIDE([Total Profit], [Total Sales], 0)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Ratios
+		lineageTag: 9d0028a1-9962-5b23-813b-1b7f4b231341
+
+	/// Umsatz im Vormonat
+	measure 'Sales Previous Month' =
+			CALCULATE(
+			    [Total Sales],
+			    DATEADD('Calendar'[Date], -1, MONTH)
+			)
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Time Intelligence
+		lineageTag: 4f551c36-e179-5195-863b-b844a4129b44
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	/// Veränderung zum Vormonat
+	measure 'Sales MoM Change %' = DIVIDE([Total Sales] - [Sales Previous Month], [Sales Previous Month], 0)
+		formatString: 0.0%;-0.0%;0.0%
+		displayFolder: Time Intelligence
+		lineageTag: 2bcb7712-e911-5e1c-828a-6256f60602b1
+
+	/// Umsatz je Kunde mit Umsatz
+	measure 'Sales per Customer' = DIVIDE([Total Sales], [Total Customers], 0)
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		displayFolder: Ratios
+		lineageTag: b561ce20-3afb-53ec-afc1-c5665f2fb802
+
+		annotation PBI_FormatHint = {"currencyCulture":"de-DE"}
+
+	column OrderID
+		dataType: string
+		lineageTag: 39f39e31-ed1b-53d9-a9a1-5a9c4d23b214
+		summarizeBy: none
+		sourceColumn: OrderID
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderDate
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: a6c691f2-0e61-5d65-91b6-77b4b7db3573
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column ProductID
+		dataType: string
+		isHidden
+		lineageTag: a547711e-62cd-5d73-9454-7f066aa1c64c
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerID
+		dataType: string
+		isHidden
+		lineageTag: b97be29a-5986-5e97-ac67-792768986d1b
+		summarizeBy: none
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: #,0
+		lineageTag: 5952ab17-4348-54b6-8608-67b606d73c71
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitPrice
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: 3fcfb29b-7650-5fa5-bc29-a42de94a1560
+		summarizeBy: none
+		sourceColumn: UnitPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiscountRate
+		dataType: double
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 83a41296-9493-5a43-962d-59a8404ede15
+		summarizeBy: none
+		sourceColumn: DiscountRate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: 4a8752fd-5c1d-51eb-942a-dfd3a865c7b6
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cost
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: 228edeb5-dc99-5872-8713-845bd3e4576d
+		summarizeBy: sum
+		sourceColumn: Cost
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: 1fa81358-dcd5-5f86-8185-fdbce50e3a0e
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesChannel
+		dataType: string
+		lineageTag: 37e478db-9939-5ac1-bf7a-f08917526bd9
+		summarizeBy: none
+		sourceColumn: SalesChannel
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProfitMargin
+		dataType: double
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 414360f2-7d45-5cc2-94b9-4b8d75773b9a
+		summarizeBy: none
+		sourceColumn: ProfitMargin
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    BasePath = if Text.EndsWith(DataFolder, "\") then DataFolder else DataFolder & "\",
+				    Source = Csv.Document(
+				        File.Contents(BasePath & "Sales.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Types = Table.TransformColumnTypes(
+				        Headers,
+				        {
+				            {"OrderID", type text},
+				            {"OrderDate", type date},
+				            {"ProductID", type text},
+				            {"CustomerID", type text},
+				            {"Quantity", Int64.Type},
+				            {"UnitPrice", Currency.Type},
+				            {"DiscountRate", Percentage.Type},
+				            {"Sales", Currency.Type},
+				            {"Cost", Currency.Type},
+				            {"Profit", Currency.Type},
+				            {"SalesChannel", type text},
+				            {"ProfitMargin", Percentage.Type}
+				        },
+				        "en-US"
+				    )
+				in
+				    Types
+
+	annotation PBI_ResultType = Table
+

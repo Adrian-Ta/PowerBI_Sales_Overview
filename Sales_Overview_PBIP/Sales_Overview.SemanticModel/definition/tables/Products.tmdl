@@ -1,0 +1,80 @@
+table Products
+	lineageTag: a1f4b68c-6b7a-581f-8822-6dd6de3e5990
+
+	column ProductID
+		dataType: string
+		lineageTag: de5b0e24-8320-5160-ab8c-cff57fcd9265
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductName
+		dataType: string
+		lineageTag: b7cf88ac-54f6-502d-b92e-9bbaf7521170
+		summarizeBy: none
+		sourceColumn: ProductName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 5f2f0f52-3c01-59d7-af19-8b5b414f0c53
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubCategory
+		dataType: string
+		lineageTag: fc1b18c6-a889-5fc8-8246-da75432899bb
+		summarizeBy: none
+		sourceColumn: SubCategory
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitCost
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: 93cf4aa4-980d-570e-b9a1-8ae366e879c1
+		summarizeBy: none
+		sourceColumn: UnitCost
+
+		annotation SummarizationSetBy = Automatic
+
+	column ListPrice
+		dataType: decimal
+		formatString: #,0.00 €;-#,0.00 €;#,0.00 €
+		lineageTag: e9b50d58-7cca-5d18-881f-fd521c225267
+		summarizeBy: none
+		sourceColumn: ListPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Products = m
+		mode: import
+		source =
+				let
+				    BasePath = if Text.EndsWith(DataFolder, "\") then DataFolder else DataFolder & "\",
+				    Source = Csv.Document(
+				        File.Contents(BasePath & "Products.csv"),
+				        [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]
+				    ),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Types = Table.TransformColumnTypes(
+				        Headers,
+				        {
+				            {"ProductID", type text},
+				            {"ProductName", type text},
+				            {"Category", type text},
+				            {"SubCategory", type text},
+				            {"UnitCost", Currency.Type},
+				            {"ListPrice", Currency.Type}
+				        },
+				        "en-US"
+				    )
+				in
+				    Types
+
+	annotation PBI_ResultType = Table
+

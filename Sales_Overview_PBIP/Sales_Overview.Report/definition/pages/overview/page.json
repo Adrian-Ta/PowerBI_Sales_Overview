@@ -1,0 +1,130 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/1.4.0/schema.json",
+  "name": "overview",
+  "displayName": "Overview",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "salesProfitByMonth",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitByMonth",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitByMonth",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesProfitByMonth",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByCategory",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByCategory",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByCategory",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByCategory",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByRegion",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByRegion",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByRegion",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesByRegion",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top5Products",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top5Products",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top5Products",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "top5Products",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySubCategory",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySubCategory",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySubCategory",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySubCategory",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegment",
+      "target": "slicerYear",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegment",
+      "target": "slicerRegion",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegment",
+      "target": "slicerCategory",
+      "type": "NoFilter"
+    },
+    {
+      "source": "salesBySegment",
+      "target": "slicerChannel",
+      "type": "NoFilter"
+    }
+  ]
+}

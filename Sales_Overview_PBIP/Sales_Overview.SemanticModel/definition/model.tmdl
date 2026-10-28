@@ -1,0 +1,22 @@
+model Model
+	culture: de-DE
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: de-DE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBI_QueryOrder = ["DataFolder","Sales","Products","Customers"]
+
+annotation PBI_ProTooling = ["CopilotTooling","DevMode"]
+
+ref table Sales
+ref table Products
+ref table Customers
+ref table Calendar
+
+ref cultureInfo de-DE
+

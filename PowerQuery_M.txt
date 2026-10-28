@@ -1,0 +1,34 @@
+Power Query M – Importhinweise
+================================
+
+Nutze Power BI Desktop > Startseite > Daten abrufen > Text/CSV und importiere
+Sales.csv, Products.csv und Customers.csv aus dem entpackten Ordner.
+
+Wenn du die Abfragen im erweiterten Editor definieren möchtest, passe den
+Dateipfad jeweils an. Beispiel für Sales.csv:
+
+let
+    Source = Csv.Document(
+        File.Contents("C:\\PowerBI\\SalesOverview\\Sales.csv"),
+        [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]
+    ),
+    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    Types = Table.TransformColumnTypes(Headers,{
+        {"OrderID", type text},
+        {"OrderDate", type date},
+        {"ProductID", type text},
+        {"CustomerID", type text},
+        {"Quantity", Int64.Type},
+        {"UnitPrice", Currency.Type},
+        {"DiscountRate", Percentage.Type},
+        {"Sales", Currency.Type},
+        {"Cost", Currency.Type},
+        {"Profit", Currency.Type},
+        {"SalesChannel", type text},
+        {"ProfitMargin", Percentage.Type}
+    }, "en-US")
+in
+    Types
+
+Für Products.csv und Customers.csv kannst du die gleiche Importmethode verwenden.
+Achte darauf, dass der Pfad auf deinem Windows-System korrekt ist.
